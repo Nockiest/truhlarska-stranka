@@ -93,3 +93,11 @@
   .button-large{
     padding: var(--btn-lg-padding);
   }
+ .nav-button {
+    background: none;
+    border: none;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: calc(var( --fs-body)*1.2);
+  }

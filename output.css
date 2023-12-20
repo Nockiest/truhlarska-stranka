@@ -198,6 +198,15 @@
   padding: var(--btn-lg-padding);
 }
 
+.nav-button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: calc(var(--fs-body) * 1.2);
+}
+
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -459,7 +468,7 @@ p {
 }
 
 .footer1 {
-  background-color: var(--clr-dark);
+  background-color: #333;
   color: var(--clr-light);
   padding: 1em 8em;
   display: flex;
@@ -1179,6 +1188,15 @@ header {
 
 .button-large {
   padding: var(--btn-lg-padding);
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: calc(var(--fs-body) * 1.2);
 }
 
 body {
