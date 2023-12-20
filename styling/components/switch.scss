@@ -1,0 +1,66 @@
+
+
+  .switch-container {
+    position: relative;
+    padding-bottom: 20px; /* Add some spacing to accommodate larger slider */
+  }
+
+  .switch-input {
+    display: none;
+  }
+
+  .switch-label {
+    display: block;
+    position: relative;
+    width: var(--switch-width);
+    height: var(--switch-height);
+    background-color: var(--switch-background);
+    border-radius: var(--switch-height);
+    cursor: pointer;
+  }
+
+  .switch-slider {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: calc(var(--switch-slider-size)  ); /* Adjusted for slider size */
+    height: calc(var(--switch-slider-size)  ); /* Adjusted for slider size */
+    background-color: var(--switch-slider-color);
+    border-radius: 50%;
+    box-shadow: var(--switch-slider-shadow);
+    transition: transform 0.3s ease;
+  }
+
+  .switch-input:checked + .switch-label .switch-slider {
+    transform: translateX(calc(var(--switch-width) - var(--switch-slider-size) )) translateY(-50%);
+    /* Adjusted for equal spacing on both sides */
+  }
+
+  /* Larger Variant */
+  .switch-container.large .switch-label {
+    width: calc(var(--switch-width) + 10px); /* Adjusted for larger width */
+    height: calc(var(--switch-height) + 10px); /* Adjusted for larger height */
+  }
+
+  .switch-container.large .switch-slider {
+    width: calc(var(--switch-slider-size) + 10px); /* Adjusted for larger slider size */
+    height: calc(var(--switch-slider-size) + 10px); /* Adjusted for larger slider size */
+    transform: translateY(-50%); /* Center the slider vertically for the larger variant */
+  }
+
+
+  // <div class="switch-container">
+  //           <input type="checkbox" id="switch" class="switch-input">
+  //           <label for="switch" class="switch-label">
+  //               <div class="switch-slider"></div>
+  //           </label>
+  //       </div>
+
+  //       <!-- Larger Variant -->
+  //       <div class="switch-container large">
+  //           <input type="checkbox" id="switchLarge" class="switch-input">
+  //           <label for="switchLarge" class="switch-label">
+  //               <div class="switch-slider"></div>
+  //           </label>
+  //       </div>

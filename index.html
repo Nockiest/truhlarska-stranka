@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truhlářství ryba</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Martel:wght@400&family=Bevan&family=Merriweather:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="res-navbar-logo">
+        <img src="assets/placeholder.png" alt="Logo" />
+      </div>
+      <div class="responzive-nav">
+        <div class="navbar-buttons" id="navbarButtons">
+          <button class="nav-button">Domů</button>
+          <button class="nav-button">O Nás</button>
+          <button class="nav-button">Služby</button>
+          <button class="nav-button">Kontakt</button>
+        </div>
+
+        <button class="nav-toggle">
+          <i class="fa fa-solid fa-bars fa-2xl nav-fa-spin"></i>
+        </button>
+        <nav class="nav ham-nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Domů</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Služby</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">O Nás</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Práce</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="bgTextHero">
+      <div class="hero-content">
+        <h1>Truhlářství Ryba</h1>
+        <p>
+          Non exercitation laborum labore id dolor ut cillum veniam est qui
+          Lorem dolor enim nulla.
+        </p>
+        <button class="button-primary button-large">Objednat Zakázku</button>
+      </div>
+    </div>
+
+
+
+    <section class="col-right-side-bar">
+
+        <div class="compact-gallery"   id="product-gallery">
+          <img src="assets/furniture.jpg" />
+          <img src="assets/kitchen.jpg" />
+          <img src="assets/placeholder.png" />
+          <img src="assets/furniture.jpg" />
+          <img src="assets/kitchen.jpg" />
+          <img src="assets/placeholder.png" />
+          <img src="assets/furniture.jpg" />
+          <img src="assets/kitchen.jpg" />
+          <img src="assets/placeholder.png" />
+        </div>
+
+
+      <div class="sideBar-btn-col sidebar1">
+        <button
+        class="button button-outline"
+        onmouseover="handleGalleryHover(0, 'product-gallery')"
+      >
+        Produkt 0
+      </button>
+      <button
+        class="button button-outline"
+        onmouseover="handleGalleryHover(1, 'product-gallery')"
+      >
+        Produkt 1
+      </button>
+      <button
+        class="button button-outline"
+        onmouseover="handleGalleryHover(2, 'product-gallery')"
+      >
+        Produkt 2
+      </button>
+      <button
+        class="button button-outline"
+        onmouseover="handleGalleryHover(3, 'product-gallery')"
+      >
+        Produkt 3
+      </button>
+      <button
+        class="button button-outline"
+        onmouseover="handleGalleryHover(4, 'product-gallery')"
+      >
+        Produkt 4
+      </button>
+      <button
+        class="button button-outline"
+        onmouseover="handleGalleryHover(5, 'product-gallery')"
+      >
+        Produkt 5
+      </button>
+      <button
+        class="button button-outline"
+        onmouseover="handleGalleryHover(6, 'product-gallery')"
+      >
+        Produkt 6
+      </button>
+      <button
+        class="button button-outline"
+        onmouseover="handleGalleryHover(7, 'product-gallery')"
+      >
+        Produkt 7
+      </button>
+        <!-- more in the sideBar-btn-col styling-->
+
+        <!-- Add your sidebar content here -->
+      </div>
+    </section>
+    <!-- Add your sidebar content here -->
+
+    <section id="about">
+      <div style="margin: 0 auto; width: 60%">
+        <h2 style="text-align: center">O Našem Řemesle</h2>
+        <p>
+          Laborum reprehenderit laboris incididunt cupidatat nisi pariatur do et
+          sunt labore eiusmod nostrud labore. Eu elit ipsum occaecat anim aute
+          velit et mollit non. Culpa in ex ullamco sunt enim deserunt. Sint sit
+          amet enim cupidatat laboris fugiat do reprehenderit in amet consequat
+          velit exercitation. Reprehenderit Lorem est qui ipsum. Occaecat
+          pariatur elit nulla labore deserunt laboris nulla aliqua nisi labore
+          voluptate fugiat reprehenderit.
+        </p>
+        <p>
+          Laborum reprehenderit laboris incididunt cupidatat nisi pariatur do et
+          sunt labore eiusmod nostrud labore. Eu elit ipsum occaecat anim aute
+          velit et mollit non. Culpa in ex ullamco sunt enim deserunt. Sint sit
+          amet enim cupidatat laboris fugiat do reprehenderit in amet consequat
+          velit exercitation. Reprehenderit Lorem est qui ipsum. Occaecat
+          pariatur elit nulla labore deserunt laboris nulla aliqua nisi labore
+          voluptate fugiat reprehenderit.
+        </p>
+      </div>
+
+      <!-- Add more about content as needed -->
+    </section>
+
+    <section class="contact-section">
+      <h2>Kontakt</h2>
+      <div class="contact-info two-column">
+        <div class="map">
+          <!-- Replace the iframe src with your Google Maps iframe code -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5125.486160155693!2d14.504351019859325!3d50.03490983120966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b923ed9cacda1%3A0x19ee6db84ba2168a!2sMartin%20Ryba!5e0!3m2!1scs!2scz!4v1702920844879!5m2!1scs!2scz"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact-details">
+          <p>
+            <strong>Addresa:</strong> Květnového vítězství 361/55, 149 00 Praha
+            11-Chodov
+          </p>
+          <p><strong>Phone:</strong> +420 123 456 789</p>
+          <p><strong>Email:</strong> maryba@volny.cz</p>
+          <p><strong>Jméno:</strong> Martin Ryba</p>
+          <button class="button-primary">Kontaktovat</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer1">
+      <!-- Navigation -->
+
+      <div class="footer-nav">
+        <h3>Navigace</h3>
+        <button class="button-text" href="#">Domů</button>
+        <button class="button-text" href="#">O Nás</button>
+        <button class="button-text" href="#">Služby</button>
+        <button class="button-text" href="#">Kontakt</button>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <form class="contact-form">
+          <input type="text" placeholder="Vaše jméno" />
+          <input type="email" placeholder="Váš  email" />
+          <textarea placeholder="Vaše zpráva"></textarea>
+          <button type="submit" class="button-primary">Poslat Zprávu</button>
+        </form>
+      </div>
+
+      <!-- Copyright -->
+      <p class="footer-copyright">
+        &copy; 2023 Jméno Příjmení. Všechna práva rezervována.
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minimum and maximum width of photo items */
+    gap: var(--gallery-gap);
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  .photo-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .photo-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }

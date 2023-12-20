@@ -1,0 +1,38 @@
+.two-column  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two-column  > :first-child,
+.two-column > :last-child {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.two-column  > :first-child {
+    order: 1; /* On smaller screens, move the first child (left column) on top */
+}
+
+@media only screen and (max-width: 600px) {
+    .two-column  {
+        flex-direction: column; /* Switch to a single column on smaller screens */
+    }
+
+    .two-column  > :first-child,
+    .two-column  > :last-child {
+        order: 0; /* Reset the order for the default order on smaller screens */
+    }
+}
+
+// <div class="two-column">
+// <div class="left-column">
+//   <h2>Left Column Content</h2>
+//   <p>This is the content of the left column.</p>
+// </div>
+
+// <div class="right-column">
+//   <h2>Right Column Content</h2>
+//   <p>This is the content of the right column.</p>
+// </div>
+// </div>

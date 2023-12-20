@@ -1,0 +1,95 @@
+.responzive-nav {
+  background-color: #333;
+  margin-bottom: 10px;
+  // padding: 2px;
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  font-size: calc(var( --fs-body)*2);
+
+  .navbar-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 1em;
+    margin: 1em;
+
+    .nav-button {
+      background: none;
+      border: none;
+      color: #fff;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: calc(var( --fs-body)*1.2);
+    }
+  }
+
+  .nav-toggle {
+    display: none;
+
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 768px) {
+    .navbar-buttons {
+      display: none;
+    }
+
+    .nav-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding:   0
+    }
+  }
+}
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const navbarButtons = document.getElementById('navbarButtons');
+//     const hamburgerMenu = document.getElementById('hamburgerMenu');
+
+//     hamburgerMenu.addEventListener('click', function () {
+//         navbarButtons.style.display = (navbarButtons.style.display === 'flex') ? 'none' : 'flex';
+//     });
+// });
+// const navToggle = document.querySelector('.nav-toggle');
+// const navLinks = document.querySelectorAll('.nav__link')
+
+// navToggle.addEventListener('click', () => {
+//     document.body.classList.toggle('nav-open');
+//     console.log("click")
+// });
+
+// navLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//         document.body.classList.remove('nav-open');
+//     })
+// })
+// <nav class="responzive-nav">
+// <div class="navbar-logo">
+//     <img src="your-logo.png" alt="Logo">
+// </div>
+// <div class="navbar-buttons" id="navbarButtons">
+//     <button class="nav-button">Home</button>
+//     <button class="nav-button">About</button>
+//     <button class="nav-button">Services</button>
+//     <button class="nav-button">Contact</button>
+// </div>
+// <button class="nav-toggle" aria-label="toggle navigation">
+// <span class="hamburger"></span>
+// </button>
+
+// // <div class="hamburger-menu" id="hamburgerMenu">
+// //     <div class="bar"></div>
+// //     <div class="bar"></div>
+// //     <div class="bar"></div>
+// </div>
+// </nav>

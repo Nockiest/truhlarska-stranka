@@ -1,0 +1,95 @@
+:root {
+  --btn-padding: 0.75rem 1.5rem;
+  --btn-lg-padding: 1rem 1.8rem;
+  --btn-radius: 0.25rem;
+  --btn-bg: var(--clr-primary);
+  --btn-primary-color: var(--clr-primary)
+  --btn-secondary-color: var( --clr-secondary)
+  --btn-tertiary-color: var( --clr-tertiary)
+  --btn-danger-color: var(--clr-danger)
+
+}
+
+@mixin button-styles {
+    display: inline-block;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    text-decoration: none;
+    padding: var(--btn-padding);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--btn-radius);
+    transition: background-color 0.1s ease, transform 200ms ease-in-out;
+    color: var(--clr-light);
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+    &:hover {
+      background-color: var(--clr-primary);
+      color: var(--clr-light);
+      transform: scale(1.1);
+    }
+  }
+
+.button-primary {
+    @include button-styles;
+    background-color: var(--clr-primary);
+
+  }
+  .button-secondary {
+    @include button-styles;
+    background-color: var( --clr-secondary);
+
+  } // used for negative actions, neext to primary buttons
+  .button-tertiary {
+    @include button-styles;
+    background-color: var(--clr-light);
+
+    border: 2px solid var( --btn-tertiary-color);
+  }// used alongside primary or standalone, used for additional options
+
+
+  .button-outline {
+    @include button-styles;
+    border: 2px solid var(--clr-primary);
+    color: var(--clr-primary);
+    background-color: var(--clr-light);
+  }  // for non important actions going back etc.
+
+  .button-circle {
+    @include button-styles;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: var(--clr-primary);
+    color: var(--btn-color);
+
+
+  }
+
+  .button-text {
+    @include button-styles;
+    color: var(--clr-dark);
+    margin-bottom: 1em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .button-disabled {
+    @include button-styles;
+    background-color: var(--clr-primary);
+    color: var(--btn-color);
+
+    &:hover {
+      background-color: var(--clr-primary);
+      cursor: not-allowed;
+    }
+  }
+
+  .button-large{
+    padding: var(--btn-lg-padding);
+  }

@@ -1,0 +1,116 @@
+
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .ham-nav {
+    position: fixed;
+    display: flex;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+
+    .nav__list {
+        list-style: none;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav__link {
+        color: inherit;
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-h2);
+        text-decoration: none;
+      }
+
+      .nav__link:hover {
+        color: var(--clr-accent);
+      }
+  }
+
+
+
+  .nav-toggle {
+    padding: 0.5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    z-index: 1000;
+  }
+
+  .nav-open .nav {
+    transform: translateX(0);
+  }
+
+  .nav-open .nav-toggle {
+    position: fixed;
+    opacity: 0;
+  }
+
+  .nav-open .hamburger {
+    transform: rotate(0.625turn);
+  }
+
+  .nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+  }
+
+  .nav-open .hamburger::after {
+    opacity: 0;
+  }
+
+
+// const navToggle = document.querySelector('.nav-toggle');
+// const navLinks = document.querySelectorAll('.nav__link')
+
+// navToggle.addEventListener('click', () => {
+//     document.body.classList.toggle('nav-open');
+//     console.log("click")
+// });
+
+// navLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//         document.body.classList.remove('nav-open');
+//     })
+// })
+
+// <header>
+// <div class="logo">
+//   <img src="assets/placeholder.png" alt="" />
+// </div>
+// <button class="nav-toggle" aria-label="toggle navigation">
+//   <span class="hamburger"></span>
+// </button>
+// <nav class="ham-nav">
+//   <ul class="nav__list">
+//     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+//     <li class="nav__item">
+//       <a href="#services" class="nav__link">My Services</a>
+//     </li>
+//     <li class="nav__item">
+//       <a href="#about" class="nav__link">About me</a>
+//     </li>
+//     <li class="nav__item">
+//       <a href="#work" class="nav__link">My Work</a>
+//     </li>
+//   </ul>
+// </nav>
+// </header>

@@ -1,0 +1,56 @@
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+:root {
+
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+  --ff-primary: 'Martel', sans-serif; /* Use Martel as the default font for the body */
+  --ff-secondary: "Bevan", sans-serif;
+  --ff-text: "Merriweather", sans-serif;
+
+  --clr-primary: #7d5300;
+  --clr-secondary: #00327D;
+  --clr-ternary: #FCD27E;
+  --clr-danger: #fe0c0c;
+  --clr-light: #fff;
+  --clr-dark: #3D2E0F;
+
+
+  --fw-bold: 700;
+  --fw-light: 200;
+  --fs-h1: 2.5rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.75rem;
+  --fs-h4: 1.5rem;
+  --fs-h5: 1.25rem;
+  --fs-h6: 1rem;
+  --fs-body: 1rem;
+  --lh: 1.5;
+
+  --switch-width: 60px;
+  --switch-height: 30px;
+  --switch-slider-size: 20px;
+  --switch-background: #ddd;
+  --switch-slider-color: var( --clr-primary);
+  --switch-slider-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+
+
+  --form-input-padding: 0.5rem;
+  --form-input-border: 1px solid #ccc;
+  --form-input-radius: 0.25rem;
+
+  --card-bg: #fff;
+  --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  --borderRadius: 4px
+}

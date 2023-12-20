@@ -1,0 +1,95 @@
+.footer1 {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  padding: 1em 8em;
+  display: flex;
+  gap: 8em;
+  text-align: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  flex-direction: row;
+  position: relative;
+  .left-side{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+
+  a {
+    margin-bottom: 1em;
+
+    :hover {
+      transform: scale(1.1);
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+    padding-top: 0;
+    text-decoration: underline;
+  }
+  // gap: 1em;
+  // margin-bottom: 20px;
+
+
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+  color: var(--clr-accent);
+}
+
+.footer-copyright {
+  align-self: flex-end; /* Align to the bottom of the flex container */
+  margin-top: auto; /* Add this to push the content to the bottom */
+  // position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+
+/*
+<footer class="footer1">
+
+  <div class='left-side'>
+    <!-- Navigation -->
+   <div class="footer-nav">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+   <!-- Contact Form -->
+  <div class="contact-form">
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  </div>
+
+
+  <!-- Copyright -->
+  <p class="footer-copyright">&copy; 2023 Your Business. All rights reserved.</p>
+
+
+</footer>
+*/

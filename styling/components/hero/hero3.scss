@@ -1,0 +1,34 @@
+.hero-3 {
+    position: relative;
+    color: #d72828;
+    background-color: brown;
+    text-align: center;
+    padding: 100px;
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+}
+
+
+}
+// <section class="hero hero-3">
+// <video autoplay muted loop poster="assets/placeholder.png">
+//     <source src="path/to/your-video.mp4" type="video/mp4">
+//     Your browser does not support the video tag.
+// </video>
+// <div class="hero-content">
+//     <h1>Immerse Yourself in the Journey</h1>
+//     <p>See the world from a different perspective.</p>
+//     <a href="#experience" class="cta-button">Start Exploring</a>
+// </div>
+// </section>

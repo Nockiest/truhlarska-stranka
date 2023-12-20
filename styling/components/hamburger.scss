@@ -1,0 +1,61 @@
+.nav-toggle {
+    background: var(--clr-light);
+    user-select: none;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    // position: relative;
+    // top:12.5px;
+    // right:12.5px
+
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    background: var(--clr-accent);
+    user-select: none
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    background: var(--clr-accent);
+    width: 2em;
+    height: 4px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .hamburger::before {
+    top: 8px;
+  }
+  .hamburger::after {
+    bottom: 8px;
+  }
+
+
+// const navToggle = document.querySelector('.nav-toggle');
+// const navLinks = document.querySelectorAll('.nav__link')
+
+// navToggle.addEventListener('click', () => {
+//     document.body.classList.toggle('nav-open');
+//     console.log("click")
+// });
+
+// navLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//         document.body.classList.remove('nav-open');
+//     })
+// })
+// <button class="nav-toggle" aria-label="toggle navigation">
+//   <span class="hamburger"></span>
+// </button>

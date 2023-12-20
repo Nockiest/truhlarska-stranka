@@ -1,0 +1,36 @@
+.hero-2 {
+    background: url('assets/placeholder.png') center/cover no-repeat;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+
+
+
+}
+
+// <section class="hero hero-2">
+// <div class="hero-overlay"></div>
+// <div class="hero-content">
+//     <h1>Discover the Beauty</h1>
+//     <p>Experience breathtaking moments with us.</p>
+//     <a href="#gallery" class="cta-button">Explore</a>
+// </div>
+// </section>
+
+ 

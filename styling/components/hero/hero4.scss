@@ -1,0 +1,37 @@
+.two-column-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: #333;
+    color: #fff;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+
+
+.hero-image {
+    flex: 1;
+    margin-left: 50px; /* Adjust the spacing between the columns */
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
+
+// <section class="two-column hero-4">
+// <div class="hero-content">
+//     <h1>Welcome to Our Website</h1>
+//     <p>Explore the best of what we have to offer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+//     <a href="#features" class="cta-button">Get Started</a>
+// </div>
+// <div class="hero-image">
+//     <img src="path/to/your-image.jpg" alt="Hero Image">
+// </div>
+// </section>

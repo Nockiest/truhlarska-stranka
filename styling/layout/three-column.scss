@@ -1,0 +1,53 @@
+.three-column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.three-column > :first-child,
+.three-column > :last-child {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.three-column > :first-child {
+    order: 1; /* On smaller screens, move the first child (left column) on top */
+}
+
+.three-column > :nth-child(2) {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.three-column > :last-child {
+    order: 3; /* On smaller screens, move the last child (right column) to the bottom */
+}
+
+@media only screen and (max-width: 600px) {
+    .three-column {
+        flex-direction: column; /* Switch to a single column on smaller screens */
+    }
+
+    .three-column > :first-child,
+    .three-column > :nth-child(2),
+    .three-column > :last-child {
+        order: 0; /* Reset the order for the default order on smaller screens */
+    }
+}
+// <div class="three-column">
+// <div class="left-column">
+//   <h2>Left Column Content</h2>
+//   <p>This is the content of the left column.</p>
+// </div>
+
+// <div class="middle-column">
+//   <h2>Middle Column Content</h2>
+//   <p>This is the content of the middle column.</p>
+// </div>
+
+// <div class="right-column">
+//   <h2>Right Column Content</h2>
+//   <p>This is the content of the right column.</p>
+// </div>
+// </div>

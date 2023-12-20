@@ -1,0 +1,10 @@
+{
+  "description": "",
+  "scripts": {
+    "sass:watch": "node-sass --watch styling --output output --recursive --output-style compressed --importer node-sass-glob-importer",
+    "sass:compile": "node-sass src/scss -o dist/css --recursive"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

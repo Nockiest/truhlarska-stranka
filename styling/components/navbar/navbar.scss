@@ -1,0 +1,70 @@
+
+// :root {
+//     --navbar-height: 100px
+// }
+// .navbar {
+//     background-color: var(--clr-dark);
+//     color: var(--clr-light);
+//     padding: 10px 0;
+//     height: 100px
+
+//   .navbar-content {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+
+//   .navbar-logo img {
+//     height: var( --navbar-height); /* Adjust the height as needed */
+//   }
+
+//   .navbar-nav {
+//     display: flex;
+//   }
+
+//   .navbar-nav a {
+//     text-decoration: none;
+//     color: var(--clr-light);
+//     margin: 0 15px;
+//     font-size: var(--fs-body);
+//     font-weight: var(--fw-bold);
+//   }
+
+//   /* Responsive Styles */
+//   @media screen and (max-width: 768px) {
+//     .navbar-content {
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+
+//     .navbar-logo {
+//       margin-bottom: 10px;
+//     }
+
+//     .navbar-nav {
+//       margin-top: 10px;
+//     }
+
+//     .navbar-nav a {
+//       margin: 0 0 10px 0;
+//     }
+//   }
+//   }
+
+
+
+//   <header class="navbar">
+//     <div class="navbar-content">
+//         <div class="navbar-logo">
+//             <img src="logo.png" alt="Logo">
+//         </div>
+//         <nav class="navbar-nav">
+//             <a href="#">Home</a>
+//             <a href="#">About</a>
+//             <a href="#">Services</a>
+//             <a href="#">Contact</a>
+//         </nav>
+//     </div>
+// </header>

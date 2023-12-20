@@ -1,0 +1,89 @@
+
+//sass --watch  styling/input.scss:output.css
+@import 'system/buttons.scss';
+@import 'system/typography.scss';
+@import 'variables.scss';
+@import 'components/compact-gallery.scss';
+@import 'components/contact/contact1.scss';
+@import 'components/contact/contact-form.scss';
+@import 'components/hero/bgTextHero.scss';
+@import 'components/hero/hero1.scss';
+@import 'components/hero/hero2.scss';
+@import 'components/hero/hero3.scss';
+
+
+@import 'components/footer.scss';
+@import 'components/hamburger.scss';
+@import 'components/header.scss';
+@import 'components/navbar/navbar.scss';
+@import 'components/photo-gallery.scss';
+
+@import 'components/navbar/hamburgerNavbar.scss';
+@import 'components/navbar/responzive-nav.scss';
+@import 'components/sidebar';
+@import 'components/sideBar-btn-col.scss';
+@import 'components/switch.scss';
+
+@import 'layout/basic-flex-styling.scss';
+@import 'layout/center-content.scss';
+@import 'layout/col-right-side-bar.scss';
+@import 'layout/two-column.scss';
+@import 'layout/three-column.scss';
+@import 'layout/vertical-center.scss';
+@import 'system/buttons.scss';
+@import 'system/typography.scss';
+@import 'variables.scss';
+
+
+.fa {
+  color:  var(--clr-light);
+
+}
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+  }
+
+  section {
+    padding: 5em 2em;
+  }
+  @media (max-width: 768px) {
+    section {
+        padding: 2em 1em; /* Adjust the padding as needed for small screens */
+    }
+}
+  body:nth-child(even) {
+    background-color: adjust-color(  #ce5804,   $alpha: -0.9);
+
+  }
+
+  section:nth-child(odd) {
+    background-color: var(--clr-light);
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  strong {
+    font-weight: var(--fw-bold);
+  }
+
+  :focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+  }
+
+
+  .section__title {
+    margin-bottom: 0.25em;
+  }
