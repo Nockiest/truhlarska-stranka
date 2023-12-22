@@ -7,7 +7,6 @@
   --btn-secondary-color: var( --clr-secondary)
   --btn-tertiary-color: var( --clr-tertiary)
   --btn-danger-color: var(--clr-danger)
-
 }
 
 @mixin button-styles {
@@ -17,7 +16,7 @@
     text-align: center;
     text-decoration: none;
     padding: var(--btn-padding);
-    cursor: pointer;
+    // cursor: pointer;
     border: none;
     border-radius: var(--btn-radius);
     transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -27,9 +26,9 @@
       opacity: 0.6;
     }
     &:hover {
-      background-color: var(--clr-primary);
-      color: var(--clr-light);
-      transform: scale(1.1);
+      // background-color: var(--clr-primary);
+      // color: var(--clr-light);
+      // transform: scale(1.1);
     }
   }
 
@@ -45,7 +44,8 @@
   } // used for negative actions, neext to primary buttons
   .button-tertiary {
     @include button-styles;
-    background-color: var(--clr-light);
+    background-color: var(--clr-tertiary);
+    color: var(--clr-dark);
 
     border: 2px solid var( --btn-tertiary-color);
   }// used alongside primary or standalone, used for additional options
@@ -93,6 +93,7 @@
   .button-large{
     padding: var(--btn-lg-padding);
   }
+
  .nav-button {
     background: none;
     border: none;

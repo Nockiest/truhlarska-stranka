@@ -16,7 +16,6 @@
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -27,12 +26,6 @@
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-primary:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-secondary {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -40,7 +33,6 @@
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -51,12 +43,6 @@
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-secondary:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-tertiary {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -64,24 +50,18 @@
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
   color: var(--clr-light);
-  background-color: var(--clr-light);
+  background-color: var(--clr-tertiary);
+  color: var(--clr-dark);
   border: 2px solid var(--btn-tertiary-color);
 }
 .button-tertiary:disabled {
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-tertiary:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-outline {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -89,7 +69,6 @@
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -102,12 +81,6 @@
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-outline:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-circle {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -115,7 +88,6 @@
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -131,12 +103,6 @@
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-circle:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-text {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -144,7 +110,6 @@
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -157,11 +122,6 @@
   opacity: 0.6;
 }
 .button-text:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-.button-text:hover {
   text-decoration: underline;
 }
 
@@ -172,7 +132,6 @@
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -183,11 +142,6 @@
 .button-disabled:disabled {
   cursor: not-allowed;
   opacity: 0.6;
-}
-.button-disabled:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
 }
 .button-disabled:hover {
   background-color: var(--clr-primary);
@@ -852,6 +806,14 @@ header {
   align-items: center;
 }
 
+.centered {
+  margin: 0 auto;
+}
+
+.centered-text {
+  text-align: center;
+}
+
 /* Container for the section layout */
 .col-right-side-bar {
   display: flex;
@@ -1008,7 +970,6 @@ header {
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -1019,12 +980,6 @@ header {
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-primary:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-secondary {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -1032,7 +987,6 @@ header {
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -1043,12 +997,6 @@ header {
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-secondary:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-tertiary {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -1056,24 +1004,18 @@ header {
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
   color: var(--clr-light);
-  background-color: var(--clr-light);
+  background-color: var(--clr-tertiary);
+  color: var(--clr-dark);
   border: 2px solid var(--btn-tertiary-color);
 }
 .button-tertiary:disabled {
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-tertiary:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-outline {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -1081,7 +1023,6 @@ header {
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -1094,12 +1035,6 @@ header {
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-outline:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-circle {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -1107,7 +1042,6 @@ header {
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -1123,12 +1057,6 @@ header {
   cursor: not-allowed;
   opacity: 0.6;
 }
-.button-circle:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-
 .button-text {
   display: inline-block;
   font-family: var(--ff-primary);
@@ -1136,7 +1064,6 @@ header {
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -1149,11 +1076,6 @@ header {
   opacity: 0.6;
 }
 .button-text:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
-}
-.button-text:hover {
   text-decoration: underline;
 }
 
@@ -1164,7 +1086,6 @@ header {
   text-align: center;
   text-decoration: none;
   padding: var(--btn-padding);
-  cursor: pointer;
   border: none;
   border-radius: var(--btn-radius);
   transition: background-color 0.1s ease, transform 200ms ease-in-out;
@@ -1175,11 +1096,6 @@ header {
 .button-disabled:disabled {
   cursor: not-allowed;
   opacity: 0.6;
-}
-.button-disabled:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  transform: scale(1.1);
 }
 .button-disabled:hover {
   background-color: var(--clr-primary);
