@@ -26,6 +26,11 @@
   cursor: not-allowed;
   opacity: 0.6;
 }
+.button-primary:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
+}
 
 .button-secondary {
   display: inline-block;
@@ -43,6 +48,11 @@
 .button-secondary:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+.button-secondary:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
 }
 
 .button-tertiary {
@@ -64,6 +74,11 @@
   cursor: not-allowed;
   opacity: 0.6;
 }
+.button-tertiary:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
+}
 
 .button-outline {
   display: inline-block;
@@ -83,6 +98,11 @@
 .button-outline:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+.button-outline:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
 }
 
 .button-circle {
@@ -107,6 +127,11 @@
   cursor: not-allowed;
   opacity: 0.6;
 }
+.button-circle:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
+}
 
 .button-text {
   display: inline-block;
@@ -125,6 +150,11 @@
 .button-text:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+.button-text:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
 }
 .button-text:hover {
   text-decoration: underline;
@@ -147,6 +177,11 @@
 .button-disabled:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+.button-disabled:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
 }
 .button-disabled:hover {
   background-color: var(--clr-primary);
@@ -985,6 +1020,11 @@ header {
   cursor: not-allowed;
   opacity: 0.6;
 }
+.button-primary:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
+}
 
 .button-secondary {
   display: inline-block;
@@ -1002,6 +1042,11 @@ header {
 .button-secondary:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+.button-secondary:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
 }
 
 .button-tertiary {
@@ -1023,6 +1068,11 @@ header {
   cursor: not-allowed;
   opacity: 0.6;
 }
+.button-tertiary:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
+}
 
 .button-outline {
   display: inline-block;
@@ -1042,6 +1092,11 @@ header {
 .button-outline:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+.button-outline:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
 }
 
 .button-circle {
@@ -1066,6 +1121,11 @@ header {
   cursor: not-allowed;
   opacity: 0.6;
 }
+.button-circle:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
+}
 
 .button-text {
   display: inline-block;
@@ -1084,6 +1144,11 @@ header {
 .button-text:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+.button-text:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
 }
 .button-text:hover {
   text-decoration: underline;
@@ -1106,6 +1171,11 @@ header {
 .button-disabled:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+.button-disabled:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  transform: scale(1.1);
 }
 .button-disabled:hover {
   background-color: var(--clr-primary);
