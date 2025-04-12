@@ -8,7 +8,7 @@ I chose a random topic and made a webstie template for it. The goal was to train
 SCSS is nice, but in 2025, where framework are everywhere, it is quite irrelevant in my oppinion. I would much rather use Material UI and Next.js for my future projects.
 
 # How to run it 
-1. enter git clone in your folder
+1. enter the following line in your terminal
 ' git clone https://github.com/Nockiest/truhlarska-stranka.git '
 2. connect the project to your git hub
 3. Make all the necessary changes
