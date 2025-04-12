@@ -9,7 +9,7 @@ SCSS is nice, but in 2025, where framework are everywhere, it is quite irrelevan
 
 # How to run it 
 1. enter git clone in your folder
-'git clone https://github.com/Nockiest/truhlarska-stranka.git'
+' git clone https://github.com/Nockiest/truhlarska-stranka.git '
 2. connect the project to your git hub
 3. Make all the necessary changes
 4. Use Vercel or any other hosting platform to put your new website online
